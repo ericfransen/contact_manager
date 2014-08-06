@@ -18,14 +18,12 @@ require 'rails_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-RSpec.describe PeopleController, :type => :controller do
+describe PeopleController, :type => :controller do
 
   # This should return the minimal set of attributes required to create a valid
   # Person. As you add validations to Person, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+  let(:valid_attributes) { { first_name: "John", last_name: "Doe" } }
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
